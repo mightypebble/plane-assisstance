@@ -1,0 +1,29 @@
+.navbar-mobile{
+    background-image: linear-gradient($dark-theme-color, $light-theme-color);
+    height: 100px;
+}
+
+.navbar-mobile__item{
+    align-items: center;
+    color: $light-text-color;
+    display: block;
+    text-align: center;
+}
+
+.menu-toggle--on{
+    content: '';
+    // stylelint-disable
+    background-image: url('../../assets/list.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: $light-theme-color;
+    // stylelint-enable
+    border: 5px solid $light-theme-color;
+    border-radius: $border-radius-circle;
+    height: 60px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 60px;
+}
