@@ -1,6 +1,8 @@
 import $ from './libs/jquery.min';
-import example from './modules/example';
+import Header from './modules/header';
 
 $(document).ready(() => {
-    console.log($('body'));
+    const header = document.querySelector('header');
+
+    const headerInstance = new Header(header);
 });

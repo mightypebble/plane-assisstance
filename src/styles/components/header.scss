@@ -1,12 +1,17 @@
 .navbar-mobile{
     background-image: linear-gradient($dark-theme-color, $light-theme-color);
-    height: 100px;
+    position: absolute;
+    top: -161px;
+    transition: 0.3s;
+    width: 100%;
 }
 
 .navbar-mobile__item{
     align-items: center;
     color: $light-text-color;
     display: block;
+    font-weight: bold;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -21,9 +26,10 @@
     // stylelint-enable
     border: 5px solid $light-theme-color;
     border-radius: $border-radius-circle;
+    bottom: -30px;
     height: 60px;
     left: 50%;
-    position: absolute;
+    position: relative;
     transform: translate(-50%);
     width: 60px;
 }
