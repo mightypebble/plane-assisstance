@@ -1,5 +1,5 @@
 const selectors = {
-    menu: '.navbar-mobile',
+    menu: '.navbar',
     menuToggleOn: '.menu-toggle--on',
 }
 
@@ -17,7 +17,7 @@ class Header{
             if (this.menu.style.top !== '0px') {
                 this.menu.style.top = '0';
             } else {
-                this.menu.style.top = `-${this.menu.offsetHeight - 31}px`;
+                this.menu.style.top = `-${this.menu.offsetHeight - 36}px`;
             }
         })
     }
