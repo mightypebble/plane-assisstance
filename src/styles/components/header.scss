@@ -2,13 +2,14 @@
     background-image: linear-gradient($dark-theme-color, $light-theme-color);
     color: $light-text-color;
     display: block;
-    font-family: $font-family-audiowide;
-    font-size: $theme-font-mobile-navbar;
+    font-family: $font-blazma;
+    font-size: $theme-font-size-mobile-navbar;
     position: absolute;
     text-align: center;
     top: -458px;
     transition: 0.3s;
     width: 100%;
+    z-index: 1;
 
     @include media-breakpoint-up(sm) {
         top: -410px;

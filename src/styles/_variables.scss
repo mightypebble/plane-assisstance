@@ -4,26 +4,41 @@ $theme-color-secondary: var(--cez-secondary);
 $extradark-theme-color: #0046be;
 $dark-theme-color: #1c6efd;
 $light-theme-color: #88d0f1;
-$extralight-theme-color: #4ac1f8;
+$extralight-theme-color: #9ddffd;
+$light-theme-color-half-opacity: #88d0f172;
 $light-text-color: #fff;
 
 // typography
-$theme-font-mobile-navbar: 20px;
-$theme-font-mobile: 16px;
+$theme-font-size-mobile-navbar: 20px;
+$theme-font-size-mobile: 18px;
+$theme-font-size-mobile-title: 38px;
+$theme-font-size-desktop: 24px;
+
 $font-family-audiowide: audiowide;
 @font-face {
     font-family: $font-family-audiowide;
     src: url('../assets/fonts/Audiowide-Regular.ttf');
 }
+$font-blazma: blazma;
+@font-face {
+        font-family: $font-blazma;
+        src: url('../assets/fonts/Blazma-515KZ.ttf') format('truetype');
+}
+$font-blazma-italic: blazma-italic;
+@font-face {
+        font-family: $font-blazma-italic;
+        src: url('../assets/fonts/BlazmaItalic-6Y52q.ttf') format('truetype');
+}
 
 // properties
 $border-radius-circle: 50%;
 $border-radius-just-edges: 20%;
+$border-radius-minimal: 2%;
 
 //other
 $grid-breakpoints: (
         xs: 0,
-        sm: 446px,
+        sm: 395px,
         md: 666px,
         lg: 1024px,
         xl: 1200px,
