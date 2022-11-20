@@ -6,7 +6,7 @@ $dark-theme-color: #1c6efd;
 $light-theme-color: #88d0f1;
 $extralight-theme-color: #9ddffd;
 $light-theme-color-half-opacity: #88d0f172;
-$light-text-color: #fff;
+$white: #fff;
 
 // typography
 $theme-font-size-mobile-navbar: 20px;
@@ -31,6 +31,7 @@ $font-blazma-italic: blazma-italic;
 }
 
 // properties
+$border-property-none: none;
 $border-radius-circle: 50%;
 $border-radius-just-edges: 20%;
 $border-radius-minimal: 2%;

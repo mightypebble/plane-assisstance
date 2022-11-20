@@ -1,6 +1,6 @@
 .navbar{
     background-image: linear-gradient($dark-theme-color, $light-theme-color);
-    color: $light-text-color;
+    color: $white;
     display: block;
     font-family: $font-blazma;
     font-size: $theme-font-size-mobile-navbar;
@@ -29,7 +29,7 @@
 
 .navbar__item{
     align-items: center;
-    color: $light-text-color;
+    color: $white;
     display: block;
     font-weight: bold;
     padding: 10px 0;
@@ -51,7 +51,8 @@
     padding: 7px 12px;
 
     &:hover{
-        color: $light-theme-color;
+        background-color: $white;
+        color: $dark-theme-color;
     }
 }
 

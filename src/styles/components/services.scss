@@ -1,0 +1,131 @@
+.services{
+    // stylelint-disable
+    background-image: linear-gradient($white, $dark-theme-color 25%, $light-theme-color);
+    // stylelint-enable
+    font-family: $font-blazma;
+    position: relative;
+    width: 100%;
+}
+
+.services__title{
+    color: $dark-theme-color;
+    font-size: $theme-font-size-mobile-title;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.services__text{
+    display: none;
+    font-size: $theme-font-size-mobile;
+    padding: 35px;
+    text-align: center;
+
+    @include media-breakpoint-up(lg) {
+        font-size: $theme-font-size-desktop;
+        max-width: 666px;
+    }
+}
+
+.services__subtitle{
+    margin-bottom: 50px;
+
+    @include media-breakpoint-up(lg) {
+        font-size: $theme-font-size-mobile-title;
+    }
+}
+
+.services__text-active{
+    display: block;
+}
+
+.services__menu{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    right: 0;
+}
+
+.services__menu-desktop{
+    display: flex;
+    justify-content: space-evenly;
+
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+}
+
+.services__icon{
+    border: solid 3px $light-theme-color;
+    border-radius: $border-radius-circle;
+    display: block;
+    height: 70px;
+    margin-bottom: 50px;
+    width: 70px;
+
+    &:hover{
+        background-color: $light-theme-color;
+    }
+
+    &:focus{
+        outline: none;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+.services__icon-mobile{
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+}
+
+.services__icon-active{
+    background-color: $dark-theme-color;
+    margin-bottom: 0;
+
+    &:hover{
+        background-color: $dark-theme-color;
+    }
+}
+
+.exterior{
+    &::after{
+        // stylelint-disable
+        background-image: url('../../assets/paint.svg');
+        background-size: cover;
+        // stylelint-enable
+        content: '';
+        display: inline-block;
+        height: 50px;
+        transform: translate(1%, 8%);
+        width: 50px;
+
+        @include media-breakpoint-up(lg) {
+            height: 60px;
+            width: 60px;
+        }
+    }
+}
+
+.interior{
+    &::after{
+        // stylelint-disable
+        background-image: url('../../assets/couch.svg');
+        background-size: cover;
+        // stylelint-enable
+        content: '';
+        display: inline-block;
+        height: 50px;
+        transform: translate(3%, 7%);
+        width: 50px;
+
+        @include media-breakpoint-up(lg) {
+            height: 60px;
+            width: 60px;
+        }
+    }
+}

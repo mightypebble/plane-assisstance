@@ -1,4 +1,5 @@
 .home{
+    height: 800px;
     position: relative;
 }
 
@@ -17,7 +18,7 @@
     margin: 80px 20px;
     max-width: 500px;
     padding: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     position: absolute;
 
     @include media-breakpoint-up(lg) {
@@ -37,7 +38,7 @@
     background-color: $extradark-theme-color;
     border-radius: $border-radius-minimal;
     bottom: 0;
-    color: $light-text-color;
+    color: $white;
     margin: 15px;
     padding: 10px;
     position: absolute;
@@ -45,8 +46,8 @@
     text-decoration: none;
 
     &:hover{
-        border: 2px solid $light-text-color;
-        color: $light-theme-color;
+        background-color: $white;
+        color: $dark-theme-color;
         text-decoration: none;
     }
 }
