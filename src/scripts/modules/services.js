@@ -36,6 +36,13 @@ class Services{
                         }
                     })
                 }
+                if (buttonElement.classList.contains('repairs')) {
+                    this.text.forEach(textElement => {
+                        if (textElement.classList.contains('services__text-repairs')) {
+                            textElement.classList.add('services__text-active');
+                        }
+                    })
+                }
             })
         });
     }

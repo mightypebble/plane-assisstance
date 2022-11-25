@@ -4,7 +4,7 @@
     display: block;
     font-family: $font-blazma;
     font-size: $theme-font-size-mobile-navbar;
-    position: absolute;
+    position: fixed;
     text-align: center;
     top: -458px;
     transition: 0.3s;

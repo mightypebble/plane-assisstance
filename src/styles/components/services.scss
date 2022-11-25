@@ -2,21 +2,30 @@
     // stylelint-disable
     background-image: linear-gradient($white, $dark-theme-color 25%, $light-theme-color);
     // stylelint-enable
-    font-family: $font-blazma;
+    font-family: $font-family-ubuntu;
     position: relative;
     width: 100%;
+
+    @include media-breakpoint-up(lg) {
+        height: 800px;
+    }
 }
 
 .services__title{
     color: $dark-theme-color;
+    font-family: $font-blazma;
     font-size: $theme-font-size-mobile-title;
     margin: 20px 0;
     text-align: center;
 }
 
 .services__text{
+    background-color: $light-theme-color-half-opacity;
+    border-radius: $border-radius-minimal;
+    color: $white;
     display: none;
     font-size: $theme-font-size-mobile;
+    margin: 20px;
     padding: 35px;
     text-align: center;
 
@@ -27,6 +36,7 @@
 }
 
 .services__subtitle{
+    font-family: $font-blazma;
     margin-bottom: 50px;
 
     @include media-breakpoint-up(lg) {
@@ -47,11 +57,11 @@
 }
 
 .services__menu-desktop{
-    display: flex;
+    display: none;
     justify-content: space-evenly;
 
-    @include media-breakpoint-down(lg) {
-        display: none;
+    @include media-breakpoint-up(lg) {
+        display: flex;
     }
 }
 
@@ -84,7 +94,7 @@
 }
 
 .services__icon-active{
-    background-color: $dark-theme-color;
+    background-image: linear-gradient($dark-theme-color, $light-theme-color);
     margin-bottom: 0;
 
     &:hover{
@@ -101,11 +111,12 @@
         content: '';
         display: inline-block;
         height: 50px;
-        transform: translate(1%, 8%);
+        transform: translate(-15%, 8%);
         width: 50px;
 
         @include media-breakpoint-up(lg) {
             height: 60px;
+            transform: translate(1%, 8%);
             width: 60px;
         }
     }
@@ -120,11 +131,32 @@
         content: '';
         display: inline-block;
         height: 50px;
-        transform: translate(3%, 7%);
+        transform: translate(-15%, 7%);
         width: 50px;
 
         @include media-breakpoint-up(lg) {
             height: 60px;
+            transform: translate(3%, 7%);
+            width: 60px;
+        }
+    }
+}
+
+.repairs{
+    &::after{
+        // stylelint-disable
+        background-image: url('../../assets/repairs.svg');
+        background-size: cover;
+        // stylelint-enable
+        content: '';
+        display: inline-block;
+        height: 50px;
+        transform: translate(-15%, 7%);
+        width: 50px;
+
+        @include media-breakpoint-up(lg) {
+            height: 60px;
+            transform: translate(3%, 7%);
             width: 60px;
         }
     }

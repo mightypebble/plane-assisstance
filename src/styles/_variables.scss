@@ -29,6 +29,11 @@ $font-blazma-italic: blazma-italic;
         font-family: $font-blazma-italic;
         src: url('../assets/fonts/BlazmaItalic-6Y52q.ttf') format('truetype');
 }
+$font-family-ubuntu: ubuntu;
+@font-face {
+    font-family: $font-family-ubuntu;
+    src: url('../assets/fonts/Ubuntu-Medium.ttf');
+}
 
 // properties
 $border-property-none: none;

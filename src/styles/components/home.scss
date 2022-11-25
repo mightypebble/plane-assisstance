@@ -13,24 +13,26 @@
 .home__text{
     background-color: $light-theme-color-half-opacity;
     border-radius: $border-radius-minimal;
-    font-family: $font-blazma;
+    font-family: $font-family-ubuntu;
     font-size: $theme-font-size-mobile;
     margin: 80px 20px;
     max-width: 500px;
     padding: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
     position: absolute;
 
     @include media-breakpoint-up(lg) {
         font-size: $theme-font-size-desktop;
-        margin: 80px 200px
-
+        margin: 80px 200px;
+        padding-bottom: 90px;
     }
 }
 
 .home__title{
     color: $extradark-theme-color;
+    font-family: $font-blazma;
     font-size: $theme-font-size-mobile-title;
+    margin-bottom: 30px;
     text-align: center;
 }
 
