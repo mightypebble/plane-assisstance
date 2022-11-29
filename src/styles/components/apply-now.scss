@@ -1,43 +1,43 @@
-.home{
-    height: 800px;
-    position: relative;
+.apply-now{
+    // stylelint-disable
+    background-image: url('../../assets/images/plane-front.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // stylelint-enable
+    height: 600px;
+
+    @include media-breakpoint-up(lg) {
+        height: 500px;
+    }
 }
 
-.home__background{
-    height: 800px;
-    object-fit: cover;
-    position: absolute;
-    width: 100%;
-}
-
-.home__text{
+.apply-now__text{
     background-color: $light-theme-color-half-opacity;
     border-radius: $border-radius-minimal;
     color: $white;
     font-family: $font-family-ubuntu;
     font-size: $theme-font-size-mobile;
-    margin: 80px 20px;
-    max-width: 500px;
-    padding: 20px;
-    padding-bottom: 80px;
+    margin: 100px 20px;
+    padding: 20px 20px 60px;
     position: absolute;
+    text-align: center;
 
     @include media-breakpoint-up(lg) {
         font-size: $theme-font-size-desktop;
-        margin: 80px 200px;
-        padding-bottom: 90px;
+        margin: 100px 200px;
+        max-width: 666px;
     }
 }
 
-.home__title{
+.apply-now__title{
     color: $extradark-theme-color;
     font-family: $font-blazma;
     font-size: $theme-font-size-mobile-title;
-    margin-bottom: 30px;
     text-align: center;
 }
 
-.home__about-link{
+.apply-now__link{
     background-color: $extradark-theme-color;
     border-radius: $border-radius-minimal;
     bottom: 0;
