@@ -1,6 +1,6 @@
 .navbar{
-    background-image: linear-gradient($dark-theme-color, $light-theme-color);
-    color: $white;
+    background-color: $white;
+    color: $dark-theme-color;
     display: block;
     font-family: $font-blazma;
     font-size: $theme-font-size-mobile-navbar;
@@ -29,7 +29,7 @@
 
 .navbar__item{
     align-items: center;
-    color: $white;
+    color: $dark-theme-color;
     display: block;
     font-weight: bold;
     padding: 10px 0;
@@ -46,13 +46,14 @@
 }
 
 .navbar__item-bordered{
-    background-color: $extradark-theme-color;
+    background-color: $dark-theme-color;
     border-radius: $border-radius-just-edges;
+    color: $white;
     padding: 7px 12px;
 
     &:hover{
-        background-color: $white;
-        color: $dark-theme-color;
+        background-color: $extradark-theme-color;
+        color: $white;
     }
 }
 
@@ -63,9 +64,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: $extralight-theme-color;
+    background-color: $dark-theme-color;
     // stylelint-enable
-    border: 5px solid $light-theme-color;
+    border: 5px solid $extradark-theme-color;
     border-radius: $border-radius-circle;
     bottom: -30px;
     height: 60px;

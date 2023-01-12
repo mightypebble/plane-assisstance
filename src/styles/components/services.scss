@@ -1,14 +1,10 @@
 .services{
     // stylelint-disable
-    background-image: linear-gradient($white, $dark-theme-color 25%, $light-theme-color);
+    background-color: $white;
     // stylelint-enable
     font-family: $font-family-ubuntu;
     position: relative;
     width: 100%;
-
-    @include media-breakpoint-up(lg) {
-        height: 800px;
-    }
 }
 
 .services__title{
@@ -20,12 +16,12 @@
 }
 
 .services__text{
-    background-color: $light-theme-color-half-opacity;
-    border-radius: $border-radius-minimal;
+    background-color: $dark-theme-color;
     color: $white;
     display: none;
     font-size: $theme-font-size-mobile;
     margin: 20px;
+    margin-bottom: 50px;
     padding: 35px;
     text-align: center;
 
@@ -66,7 +62,7 @@
 }
 
 .services__icon{
-    border: solid 3px $light-theme-color;
+    border: solid 3px $dark-theme-color;
     border-radius: $border-radius-circle;
     display: block;
     height: 70px;
@@ -94,7 +90,7 @@
 }
 
 .services__icon-active{
-    background-image: linear-gradient($dark-theme-color, $light-theme-color);
+    background-color: $dark-theme-color;
     margin-bottom: 0;
 
     &:hover{
@@ -131,12 +127,12 @@
         content: '';
         display: inline-block;
         height: 50px;
-        transform: translate(-15%, 7%);
+        transform: translate(-16%, 7%);
         width: 50px;
 
         @include media-breakpoint-up(lg) {
             height: 60px;
-            transform: translate(3%, 7%);
+            transform: translate(1%, 7%);
             width: 60px;
         }
     }
