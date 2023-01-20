@@ -25,6 +25,10 @@
 
 .navbar__items-container{
     padding: 0 70px;
+
+    @include media-breakpoint-up(lg) {
+        display: flex;
+    }
 }
 
 .navbar__item{

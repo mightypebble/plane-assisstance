@@ -1,0 +1,61 @@
+.apply{
+    background-color: $dark-theme-color;
+    font-family: $font-family-ubuntu;
+    font-size: $theme-font-size-mobile;
+    height: 600px;
+    position: relative;
+}
+
+.apply__menu{
+    align-items: center;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    height: 100%;
+    justify-content: space-evenly;
+
+    @include media-breakpoint-up(lg) {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        margin: 0 250px;
+    }
+}
+
+.apply__button{
+    background-color: $white;
+    border: $border-property-none;
+    border-radius: $border-radius-just-edges;
+    color: $dark-theme-color;
+    padding: 7px 12px;
+
+    &:hover{
+        background-color: $extralight-theme-color;
+        text-decoration: none;
+    }
+}
+
+.apply__form{
+    background-color: $extradark-theme-color;
+    display: grid;
+    height: 600px;
+    justify-items: center;
+    padding: 50px 0;
+    position: absolute;
+    right: 100%;
+    top: 0;
+    transition: 0.5s;
+    width: 100%;
+
+    .form__item{
+        background-color: $white;
+        border: $border-property-none;
+        border-radius: $border-radius-just-edges;
+        color: $dark-theme-color;
+        min-width: 200px;
+        padding: 7px 12px;
+
+        &:hover{
+            background-color: $extralight-theme-color;
+            text-decoration: none;
+        }
+    }
+}
