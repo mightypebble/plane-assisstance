@@ -15,22 +15,6 @@
     text-align: center;
 }
 
-.services__text{
-    background-color: $dark-theme-color;
-    color: $white;
-    display: none;
-    font-size: $theme-font-size-mobile;
-    margin: 20px;
-    margin-bottom: 50px;
-    padding: 35px;
-    text-align: center;
-
-    @include media-breakpoint-up(lg) {
-        font-size: $theme-font-size-desktop;
-        max-width: 666px;
-    }
-}
-
 .services__subtitle{
     font-family: $font-blazma;
     margin-bottom: 50px;
@@ -40,25 +24,53 @@
     }
 }
 
-.services__text-active{
-    display: block;
-}
-
 .services__menu{
-    display: grid;
+    display: flex;
+    height: 600px;
     justify-content: center;
     justify-items: center;
+    overflow: hidden;
     position: relative;
-    right: 0;
+
+    .services__text{
+        background-color: $dark-theme-color;
+        color: $white;
+        font-size: $theme-font-size-mobile;
+        margin: 20px;
+        margin-bottom: 50px;
+        padding: 35px;
+        position: absolute;
+        text-align: center;
+        transition: 0.5s;
+        width: calc(100% - 40px);
+    
+        @include media-breakpoint-up(lg) {
+            font-size: $theme-font-size-desktop;
+            max-width: 666px;
+        }
+    }
+    
+    .services__text-exterior{
+        left: 50%;
+    }
+    
+    .services__text-interior{
+        left: 100%;
+    }
+    
+    .services__text-repairs{
+        left: 200%;
+    }
+
+    .services__text-active{
+        left: 50%;
+        transform: translate(calc(-50% - 20px));
+    }
 }
 
-.services__menu-desktop{
-    display: none;
+.services__buttons{
+    display: flex;
     justify-content: space-evenly;
-
-    @include media-breakpoint-up(lg) {
-        display: flex;
-    }
 }
 
 .services__icon{
@@ -67,6 +79,7 @@
     display: block;
     height: 70px;
     margin-bottom: 50px;
+    transition: 0.5s;
     width: 70px;
 
     &:hover{
@@ -78,23 +91,24 @@
     }
 
     @include media-breakpoint-up(lg) {
-        height: 100px;
-        width: 100px;
-    }
-}
-
-.services__icon-mobile{
-    @include media-breakpoint-up(lg) {
-        display: none;
+        height: 90px;
+        width: 90px;
     }
 }
 
 .services__icon-active{
     background-color: $dark-theme-color;
+    height: 90px;
     margin-bottom: 0;
+    width: 90px;
 
     &:hover{
         background-color: $dark-theme-color;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 110px;
+        width: 110px;
     }
 }
 

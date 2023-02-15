@@ -21,16 +21,7 @@
 }
 
 .apply__button{
-    background-color: $white;
-    border: $border-property-none;
-    border-radius: $border-radius-just-edges;
-    color: $dark-theme-color;
-    padding: 7px 12px;
-
-    &:hover{
-        background-color: $extralight-theme-color;
-        text-decoration: none;
-    }
+    @include link-button;
 }
 
 .apply__form{

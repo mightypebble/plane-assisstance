@@ -1,12 +1,10 @@
 .home{
     display: grid;
     grid-template-rows: 40% 60%;
-    height: 900px;
 
     @include media-breakpoint-up(lg) {
         grid-template-columns: 50% 50%;
         grid-template-rows: auto;
-        height: 800px;
     }
 }
 
@@ -18,7 +16,7 @@
     width: 100%;
 }
 
-.home__text{
+.home__text-container{
     background-color: $dark-theme-color;
     color: $white;
     display: inline-block;
@@ -45,23 +43,10 @@
     text-align: center;
 }
 
+.home__text{
+    margin-bottom: 30px;
+}
+
 .home__about-link{
-    background-color: $white;
-    border-radius: $border-radius-just-edges;
-    color: $dark-theme-color;
-    left: 50%;
-    margin-top: 40px;
-    padding: 10px;
-    position: absolute;
-    text-decoration: none;
-    transform: translate(-50%);
-
-    &:hover{
-        background-color: $extralight-theme-color;
-        text-decoration: none;
-    }
-
-    @include media-breakpoint-up(lg) {
-        margin-top: 80px;
-    }
+    @include link-button;
 }
