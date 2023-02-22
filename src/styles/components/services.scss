@@ -79,6 +79,7 @@
     display: block;
     height: 70px;
     margin-bottom: 50px;
+    position: relative;
     transition: 0.5s;
     width: 70px;
 
@@ -121,12 +122,14 @@
         content: '';
         display: inline-block;
         height: 50px;
-        transform: translate(-15%, 8%);
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
         width: 50px;
 
         @include media-breakpoint-up(lg) {
             height: 60px;
-            transform: translate(1%, 8%);
             width: 60px;
         }
     }
@@ -141,12 +144,14 @@
         content: '';
         display: inline-block;
         height: 50px;
-        transform: translate(-16%, 7%);
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
         width: 50px;
 
         @include media-breakpoint-up(lg) {
             height: 60px;
-            transform: translate(1%, 7%);
             width: 60px;
         }
     }
@@ -161,12 +166,14 @@
         content: '';
         display: inline-block;
         height: 50px;
-        transform: translate(-15%, 7%);
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
         width: 50px;
 
         @include media-breakpoint-up(lg) {
             height: 60px;
-            transform: translate(3%, 7%);
             width: 60px;
         }
     }

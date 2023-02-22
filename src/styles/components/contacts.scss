@@ -1,48 +1,17 @@
 .contacts{
-    display: grid;
-    grid-template-rows: 40% 60%;
-    height: 900px;
-
-    @include media-breakpoint-up(lg) {
-        grid-template-columns: 50% 50%;
-        grid-template-rows: auto;
-        height: 800px;
-    }
+    @include main-section;
 }
 
 .contacts__image{
-    display: inline-block;
-    height: 100%;
-    object-fit: cover;
-    position: relative;
-    width: 100%;
+    @include page-main-image;
 }
 
 .contacts__text{
-    background-color: $dark-theme-color;
-    color: $white;
-    display: inline-block;
-    font-family: $font-family-ubuntu;
-    font-size: $theme-font-size-mobile;
-    order: 2;
-    padding: 20px;
-    position: relative;
-    text-align: center;
-    width: 100%;
-
-    @include media-breakpoint-up(lg) {
-        font-size: $theme-font-size-desktop;
-        order: 0;
-        padding: 100px;
-    }
+    @include text-container;
 }
 
 .contacts__title{
-    color: $white;
-    font-family: $font-blazma;
-    font-size: $theme-font-size-mobile-title;
-    margin-bottom: 30px;
-    text-align: center;
+    @include page-main-title;
 }
 
 .contacts__subtitle{
