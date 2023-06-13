@@ -2,12 +2,28 @@
     @include main-section;
 }
 
+.contacts-image-container{
+    height: 100%;
+    position: relative;
+}
+
 .contacts__image{
     @include page-main-image;
+
+    object-position: center;
+    position: relative;
+
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+    }
 }
 
 .contacts__text{
     @include text-container;
+
+    p:visited{
+        color: $white;
+    }
 }
 
 .contacts__title{

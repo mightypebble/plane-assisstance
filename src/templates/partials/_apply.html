@@ -1,16 +1,22 @@
-<section class="apply">
-    <div class="apply__menu">
-        <button class="apply__button" disabled>Upload CV</button>
-        <button class="apply__button apply__button-form--toggle" disabled>Fill in form</button>
-        <a class="apply__button" href="https://www.jobs.bg/en/company/301834" target="_blank" title="jobs.bg/planeassistance">Apply in Jobs.bg</a>
+<section class="apply" id="apply">
+    <div class="apply-text-container">
+        <div>
+            <h3 class="apply-title">Join our team!</h3>
+            <p class="apply-text">
+                We are always looking for new candidates! 
+                Every position is open and requires no previous training at all.
+                Simply send us your CV or fill in our short form.
+            </p>
+            <a class="apply-button menu-toggle" href="javascript:;" title="Apply now">Apply now</a>
+        </div>
     </div>
-    <form class="apply__form">
-        <button class="form__item form__item-close" type="button">Close</button><br>
-        <input class="form__item" type="text" id="fullName" name="fullName" placeholder="Full Name"><br>
-        <input class="form__item" type="text" id="lname" name="lname" placeholder="Phone number '+359 ...'"><br>
-        <label for="experience">Do you have previous expreience in the field?</label>
-        <input class="form__item" type="checkbox" id="expreience" name="experience"><br>
-        <textarea class="form__item" type="text" id="lname" name="lname" placeholder="other"></textarea><br>
-        <button class="form__item" type="submit">Submit</button>
-    </form>
+    <div class="apply-hidden-container">
+        <img class="apply-image" width="1920" height="1234" src="../../assets/images/plane-front.jpg" alt="plane-front">
+        <div class="apply-menu">
+            <p class="apply-text">Go to our Jobs.bg page and check our jobs offers.</p>
+            <a class="apply-button" href="https://www.jobs.bg/en/company/301834" target="_blank" title="jobs.bg/planeassistance">Apply in Jobs.bg</a>
+            <p class="apply-text">Or simply send us your CV and we'll give you the perfect job offer.</p>
+            <button class="apply-button" disabled>Upload CV</button>
+        </div>
+    </div>
 </section>

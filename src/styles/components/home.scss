@@ -2,22 +2,77 @@
     @include main-section;
 }
 
-.home__image{
+.home-image{
     @include page-main-image;
 }
 
-.home__text-container{
+.home-text-container{
     @include text-container;
 }
 
-.home__title{
+.hidden-container{
+    background-color: $dark-theme-color;
+    font-family: $font-family-ubuntu;
+    font-size: $theme-font-size-mobile;
+    position: relative;
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+        height: 100%;
+        position: relative;
+    }
+}
+
+.home-hidden-text{
+    align-items: center;
+    background-color: $dark-theme-color;
+    color: $white;
+    display: grid;
+    font-family: $font-family-ubuntu;
+    font-size: $theme-font-size-mobile;
+    height: 200px;
+    overflow: hidden;
+    padding: 20px;
+    position: absolute;
+    text-align: center;
+    top: 0%;
+    transition: .5s;
+    width: 100%;
+    z-index: 1;
+    
+    @include media-breakpoint-up(lg) {
+        font-size: $theme-font-size-desktop;
+        height: 100%;
+        padding: 100px;
+    }
+}
+
+.hidden-container--active{
+    .home-hidden-text{
+        height: 200px;
+        top: 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .home-hidden-text{
+            height: 100%;
+            top: 0;
+        }
+
+        .home-image{
+            left: -100%;
+        }
+    }
+}
+
+.home-title{
     @include page-main-title;
 }
 
-.home__text{
+.home-text{
     margin-bottom: 30px;
 }
 
-.home__about-link{
+.home-button{
     @include link-button;
 }

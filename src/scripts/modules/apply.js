@@ -1,31 +1,39 @@
 const selectors = {
-    formButton: '.apply__button-form--toggle',
-    formClose: '.form__item-close',
-    form: '.apply__form',
+    applyHiddenContainer: '.apply-hidden-container',
+    applyTextContainer: '.apply-text-container',
+    button: '.menu-toggle',
+    menu: '.apply-menu',
 }
 
 class Apply {
     constructor (container) {
         this.container = container;
-        this.formButton = this.container.querySelector(selectors.formButton);
-        this.formClose = this.container.querySelector(selectors.formClose);
-        this.form = this.container.querySelector(selectors.form);
-        
+        this.applyHiddenContainer =  this.container.querySelector(selectors.applyHiddenContainer);
+        this.applyTextContainer =  this.container.querySelector(selectors.applyTextContainer);
+        this.button = this.container.querySelector(selectors.button);
+        this.menu =  this.container.querySelector(selectors.menu);
 
         this.initEvents();
     }
 
-    formToggle() {
-        this.formButton.addEventListener('click', () => {
-            this.form.style.right = '0';
+    activateHidden() {
+        this.button.addEventListener('click', () => {
+            this.applyHiddenContainer.classList.add('apply-menu--active');
+            this.menu.style.height = `${this.applyTextContainer.offsetHeight}px`;
+            console.log(this.applyTextContainer.offsetHeight)
         });
-        this.formClose.addEventListener('click', () => {
-            this.form.style.right = '100%';
+    }
+
+    deactivateHidden() {
+        this.applyHiddenContainer.addEventListener('click', () => {
+            this.applyHiddenContainer.classList.remove('apply-menu--active');
+            this.menu.style.height = null;
         });
     }
 
     initEvents() {
-        this.formToggle();
+        this.activateHidden();
+        this.deactivateHidden();
     }
 }
 
